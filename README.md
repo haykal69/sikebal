@@ -1,1 +1,0 @@
-# sikebal-kelompok
