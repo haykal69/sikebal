@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <title>sikebal</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +28,11 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+  <?php echo validation_errors(); ?>
+  <br>
   <div class="wrapper">
 
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
       <ul class="navbar-nav">
@@ -45,7 +47,6 @@
         </li>
       </ul>
 
-      <!-- SEARCH FORM -->
       <form class="form-inline ml-3">
         <div class="input-group input-group-sm">
           <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
@@ -57,7 +58,6 @@
         </div>
       </form>
 
-      <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
@@ -67,10 +67,8 @@
         </li>
       </ul>
     </nav>
-    <!-- /.navbar -->
     
-
-    <!-- Main Sidebar Container -->
+    <!-- sidebar -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="#" class="brand-link">
@@ -86,134 +84,125 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">  
 
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                DATA MASYARAKAT
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 01</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 02</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 03</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 04</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 05</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 06</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Warga Rt 07</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  DATA MASYARAKAT
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
 
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                PELAYANAN
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pembayaran PBB</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Surat Pengantar RT</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Surat SKTM</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>pendaftaran Ktp</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>pendaftaran KK</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>pendaftaran Akte</p>
-                </a>
-              </li>
+              <ul class="nav nav-treeview">
 
-            </ul>
-          </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('rt01/index'); ?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 01</p>
+                  </a>
+                </li>
 
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+                <li class="nav-item">
+                  <a href="<?= base_url('rt01/index'); ?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 02</p>
+                  </a>
+                </li>
 
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 03</p>
+                  </a>
+                </li>
 
-  <!-- /.row (main row) -->
-</div><!-- /.container-fluid -->
-</section>
-<!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 04</p>
+                  </a>
+                </li>
 
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 05</p>
+                  </a>
+                </li>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 06</p>
+                  </a>
+                </li>
 
-<!-- jQuery -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Data Warga Rt 07</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  PELAYANAN
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pembayaran PBB</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Surat Pengantar RT</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Surat SKTM</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>pendaftaran Ktp</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>pendaftaran KK</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>pendaftaran Akte</p>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+  </div> 
+
+<!-- foooter -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -222,16 +211,16 @@
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="<?= base_url();?>asset/vendor/templte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="<?= base_url();?>asset/vendor/templte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- ChartJS -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?= base_url();?>asset/vendor/templte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- <script src="<?= base_url();?>asset/vendor/templte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script> -->
 <!-- jQuery Knob Chart -->
-<script src="<?= base_url();?>asset/vendor/templte/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- <script src="<?= base_url();?>asset/vendor/templte/plugins/jquery-knob/jquery.knob.min.js"></script> -->
 <!-- daterangepicker -->
 <script src="<?= base_url();?>asset/vendor/templte/plugins/moment/moment.min.js"></script>
 <script src="<?= base_url();?>asset/vendor/templte/plugins/daterangepicker/daterangepicker.js"></script>
