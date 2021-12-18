@@ -38,8 +38,8 @@ class Rt01 extends CI_Controller {
 		$this->form_validation->set_rules('jenis_kelamin','Jenis Kelamin','required');
 		$this->form_validation->set_rules('tempat_lahir','Tempat Lahir','required');
 		$this->form_validation->set_rules('tanggal_lahir','Tanggal Lahir','required');
-		$this->form_validation->set_rules('no_telp','Nomor Telepon','required');
-		$this->form_validation->set_rules('alamat','Alamat','required');
+		$this->form_validation->set_rules('no_telp','Nomor Telepon','required|min_length[10]|max_length[13]');
+		$this->form_validation->set_rules('alamat','Alamat','required|min_length[6]|max_length[255]');
 		if ($this->form_validation->run()==true)
 		{
 			$data['nama'] = $this->input->post('nama');
