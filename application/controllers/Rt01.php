@@ -33,6 +33,7 @@ class Rt01 extends CI_Controller {
  
 	public function save()
 	{
+		
 		$this->form_validation->set_rules('nama','Nama','required|min_length[4]|max_length[255]');
 		$this->form_validation->set_rules('jenis_kelamin','Jenis Kelamin','required');
 		$this->form_validation->set_rules('tempat_lahir','Tempat Lahir','required');
